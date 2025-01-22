@@ -1,0 +1,11 @@
+<!-- button_background.xml -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/red"/> <!-- 设置背景颜色为红色 -->
+
+    <!-- 其他属性如corners、stroke等可根据需要设置 -->
+
+</shape>
+
+    <!-- activity_main.xml -->

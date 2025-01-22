@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SimpleOne</string>
+    <string name="title_section01">section01</string>
+    <string name="title_section02">section02</string>
+    <string name="title_section03">section03</string>
+    <string name="button_section_01">朗诵</string>
+    <string name="button_section_02">识字</string>
+    <string name="button_section_03">听写</string>
+    <string name="button_section_04">备用</string>
+    <string name="button_section_05">错字本</string>
+    <string name="button_section_06">添加字词</string>
+</resources>

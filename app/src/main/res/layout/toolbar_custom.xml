@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_custom"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/teal_01"
+    android:elevation="4dp"
+    android:fitsSystemWindows="true"
+    app:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp">
+
+    <!-- 返回按钮 -->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_section01_black_24dp"
+        android:contentDescription="@string/button_section_04"
+        android:padding="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical"
+        android:minWidth="44dp"
+        android:minHeight="44dp"/>
+
+    <!-- 标题 TextView -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="听写"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+</androidx.appcompat.widget.Toolbar>

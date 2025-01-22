@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 基础应用主题 -->
+    <style name="Theme.SimpleOne" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 主品牌颜色 -->
+        <item name="colorPrimary">@color/green</item> <!-- 应用的主颜色 -->
+        <item name="colorPrimaryVariant">@color/red</item> <!-- 主颜色的变体 -->
+        <item name="colorOnPrimary">@color/black</item> <!-- 在主颜色上显示的文本颜色 -->
+
+        <!-- 次品牌颜色 -->
+        <item name="colorSecondary">@color/teal_200</item> <!-- 应用的次要颜色 -->
+        <item name="colorSecondaryVariant">@color/teal_200</item> <!-- 次要颜色的变体 -->
+        <item name="colorOnSecondary">@color/black</item> <!-- 在次要颜色上显示的文本颜色 -->
+
+        <!-- 状态栏颜色 -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item> <!-- 状态栏颜色，使用主颜色的变体 -->
+
+        <!-- 在此自定义你的主题 -->
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.section01.Section01_dictation_selection_Fragment">
+    <!--
+    命名空间：
+    xmlns:android="http://schemas.android.com/apk/res/android" --> <!-- Android 命名空间 -->
+    <!-- xmlns:app="http://schemas.android.com/apk/res-auto" --> <!-- Auto命名空间，支持自定义属性 -->
+    <!-- xmlns:tools="http://schemas.android.com/tools" --> <!-- 工具命名空间，用于设计时预览 -->
+    <!--
+    布局属性：
+    android:layout_width="match_parent" --> <!-- 设置布局宽度为填充父容器宽度 -->
+    <!-- android:layout_height="match_parent" --> <!-- 设置布局高度为填充父容器高度 -->
+    <!-- tools:context=".ui.section01.Section01_dictation_selection_Fragment" --> <!-- 指向当前 Fragment 的上下文 -->
+
+    <TextView
+        android:id="@+id/cs0201"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="听写选项"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

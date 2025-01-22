@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义导航图资源文件 -->
+<!-- 导航图（Navigation Graph）是 Android Navigation Component 的核心组件之一， -->
+<!-- 用于定义应用中的导航结构和 Fragment 之间的跳转关系。 -->
+<!-- 导航图通过 XML 文件描述，可以在运行时动态加载和使用。
+    使用 <navigation> 标签定义导航图，指定了 Android 命名空间和其他必要的命名空间。
+    android:id="@+id/mobile_navigation"：定义导航图的唯一 ID。
+    app:startDestination="@+id/navigation_section01"：设置应用的起始目标为 Section01Fragment，即用户进入应用时首先显示的 Fragment。
+    -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_section01">
+
+    <!--
+        第一个 Fragment：Section 01
+        这是导航图的默认启动目标，用户进入应用时首先显示的 Fragment。
+        该 Fragment 的布局文件为 fragment_section01.xml，
+        对应的 Fragment 类是 com.simpleone.ui.section01.Section01Fragment。
+    -->
+    <fragment
+        android:id="@+id/navigation_section01"
+        android:name="com.simpleone.ui.section01.Section01Fragment"
+        android:label="@string/title_section01"
+        tools:layout="@layout/fragment_section01">
+        <!--
+        定义从 Section01Fragment 到 Section01_literacy_Fragment 的动作
+        android:id="@+id/action_section01_to_section01_literacy"：定义动作的唯一 ID
+        app:destination="@id/navigation_section01_literacy"：指定目标 Fragment 的 ID
+        app:popUpTo="@+id/navigation_section01"：导航到目标 Fragment 时，从导航栈中弹出到 Section01Fragment 之前的所有 Fragment
+        app:popUpToInclusive="true"：确保 Section01Fragment 也会被弹出，这样返回时会直接显示 Section01Fragment
+        -->
+        <action
+            android:id="@+id/action_section01_to_section01_literacy"
+            app:destination="@id/navigation_section01_literacy"
+            app:popUpTo="@+id/navigation_section01"
+            app:popUpToInclusive="true" /><!-->如果设置为true，跳转后上界面会被移除，-->
+
+        <action
+            android:id="@+id/action_section01_to_section01_dictation"
+            app:destination="@id/navigation_section01_dictation"
+            app:popUpTo="@+id/navigation_section01"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+
+    <!--
+        第二个 Fragment：Section 02
+        用户可以通过导航操作（如点击按钮或菜单项）跳转到此 Fragment。
+        该 Fragment 的布局文件为 fragment_section02.xml，
+        对应的 Fragment 类是 com.simpleone.ui.section02.Section02Fragment。
+    -->
+    <fragment
+        android:id="@+id/navigation_section02"
+        android:name="com.simpleone.ui.section02.Section02Fragment"
+        android:label="@string/title_section02"
+        tools:layout="@layout/fragment_section02">
+        <!--
+            定义从 Section02Fragment 到 Section01_literacy_Fragment 的动作
+            android:id="@+id/action_section02_to_section01_literacy"：定义动作的唯一 ID
+            app:destination="@id/navigation_section01_literacy"：指定目标 Fragment 的 ID
+            app:popUpTo="@+id/navigation_section02"：导航到目标 Fragment 时，从导航栈中弹出到 Section02Fragment 之前的所有 Fragment
+            app:popUpToInclusive="true"：确保 Section02Fragment 也会被弹出，这样返回时会直接显示 Section02Fragment
+        -->
+        <action
+            android:id="@+id/action_section02_to_section01_literacy"
+            app:destination="@id/navigation_section01_literacy"
+            app:popUpTo="@+id/navigation_section02"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!--
+        第三个 Fragment：Section 03
+        用户可以通过导航操作（如点击按钮或菜单项）跳转到此 Fragment。
+        该 Fragment 的布局文件为 fragment_section03.xml，
+        对应的 Fragment 类是 com.simpleone.ui.section03.Section03Fragment。
+    -->
+    <fragment
+        android:id="@+id/navigation_section03"
+        android:name="com.simpleone.ui.section03.Section03Fragment"
+        android:label="@string/title_section03"
+        tools:layout="@layout/fragment_section03" />
+
+
+
+    <fragment
+        android:id="@+id/navigation_section01_literacy"
+        android:name="com.simpleone.ui.section01.Section01_literacy_Fragment"
+        tools:layout="@layout/fragment_section01_literacy" />
+
+    <fragment
+        android:id="@+id/navigation_section01_dictation"
+        android:name="com.simpleone.ui.section01.Section01_dictation_Fragment"
+        tools:layout="@layout/fragment_section01_dictation" />
+
+    <fragment
+        android:id="@+id/navigation_section01_dictation_selection"
+        android:name="com.simpleone.ui.section01.Section01_dictation_selection_Fragment"
+        tools:layout="@layout/fragment_section01_dictation_selection" />
+
+
+</navigation>

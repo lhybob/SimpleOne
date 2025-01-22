@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义菜单资源文件 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 第一个菜单项：Section 01 -->
+    <item
+        android:id="@+id/navigation_section01"
+        android:icon="@drawable/ic_section01_black_24dp"
+        android:title="@string/title_section01" />
+
+    <!-- 第二个菜单项：Section 02 -->
+    <item
+        android:id="@+id/navigation_section02"
+        android:icon="@drawable/ic_section02_black_24dp"
+        android:title="@string/title_section02" />
+
+    <!-- 第三个菜单项：Section 03 -->
+    <item
+        android:id="@+id/navigation_section03"
+        android:icon="@drawable/ic_section03_black_24dp"
+        android:title="@string/title_section03" />
+
+</menu>

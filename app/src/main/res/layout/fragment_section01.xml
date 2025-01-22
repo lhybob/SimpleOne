@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.section01.Section01Fragment">
+
+    <android.widget.Button
+        style="@style/Button_style_01"
+        android:id="@+id/button01_section01"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        android:text="@string/button_section_01"
+        android:background="@color/teal_01"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+     />
+
+    <android.widget.Button
+        style="@style/Button_style_01"
+        android:id="@+id/button02_section01"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        android:text="@string/button_section_02"
+        android:background="@color/teal_02"
+
+        app:layout_constraintTop_toTopOf="@id/button01_section01"
+        app:layout_constraintBottom_toBottomOf="@id/button01_section01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        />
+
+
+    <android.widget.Button
+        style="@style/Button_style_01"
+        android:id="@+id/button03_section01"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        android:text="@string/button_section_03"
+        android:background="@color/teal_02"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.48"
+        app:layout_constraintStart_toStartOf="@id/button01_section01"
+        app:layout_constraintEnd_toEndOf="@id/button01_section01"
+        />
+
+
+    <android.widget.Button
+        style="@style/Button_style_01"
+        android:id="@+id/button04_section01"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        android:text="@string/button_section_04"
+        android:background="@color/teal_01"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.48"
+        app:layout_constraintStart_toStartOf="@id/button02_section01"
+        app:layout_constraintEnd_toEndOf="@id/button02_section01"
+        />
+
+    <android.widget.Button
+        style="@style/Button_style_01"
+        android:id="@+id/button05_section01"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        android:text="@string/button_section_05"
+        android:background="@color/teal_01"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintStart_toStartOf="@id/button01_section01"
+        app:layout_constraintEnd_toEndOf="@id/button01_section01"
+        />
+
+    <android.widget.Button
+        style="@style/Button_style_01"
+        android:id="@+id/button06_section01"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.33"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        android:text="@string/button_section_06"
+        android:background="@color/teal_02"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintStart_toStartOf="@id/button02_section01"
+        app:layout_constraintEnd_toEndOf="@id/button02_section01"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
