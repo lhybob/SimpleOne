@@ -39,11 +39,12 @@
 
             <!-- 示例内容 -->
             <TextView
+                android:id="@+id/text_dictation_section01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="这是 ScrollView 中的内容"
-                android:padding="16dp"
-                android:textSize="16sp"/>
+                android:padding="20dp"
+                android:textSize="30sp"/>
 
         </LinearLayout>
 

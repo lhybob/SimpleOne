@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 定义主界面的布局文件 -->
-<!-- 使用 ConstraintLayout 作为根布局，实现灵活的界面布局,强大的布局方式，通过约束条件控制子视图的位置和大小 -->
-<!-- 使用 androidx.constraintlayout.widget.ConstraintLayout 作为根布局，提供灵活的子视图控制。
-    xmlns:android：Android 命名空间。
-    xmlns:app：Auto 命名空间，用于支持自定义属性。
-    xmlns:tools：Tools 命名空间，用于设计时预览。
-    android:layout_width="match_parent"：宽度填充父容器。
-    android:layout_height="match_parent"：高度填充父容器。
-    tools:context=".ui.section02.Section02Fragment"：指定当前布局文件对应的 Fragment 类，用于设计时预览。-->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -15,21 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.section02.Section02Fragment">
 
-    <!--
-        TextView 用于显示 Section 02 的文本内容
-        android:id="@+id/text_section02"：定义 TextView 的唯一 ID
-        android:layout_width="match_parent"：宽度填充父容器
-        android:layout_height="wrap_content"：高度根据内容自动调整
-        android:layout_marginStart="8dp"：左侧边距 8dp
-        android:layout_marginTop="8dp"：顶部边距 8dp
-        android:layout_marginEnd="8dp"：右侧边距 8dp
-        android:textAlignment="center"：文本居中对齐
-        android:textSize="20sp"：文本大小 20sp
-        app:layout_constraintBottom_toBottomOf="parent"：底部约束到父布局的底部
-        app:layout_constraintEnd_toEndOf="parent"：右侧约束到父布局的右侧
-        app:layout_constraintStart_toStartOf="parent"：左侧约束到父布局的左侧
-        app:layout_constraintTop_toTopOf="parent"：顶部约束到父布局的顶部
-    -->
     <TextView
         android:id="@+id/text_section02"
         android:layout_width="match_parent"
@@ -44,18 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--
-        Button 用于提交操作
-        android:id="@+id/btn_cs01"：定义 Button 的唯一 ID
-        android:layout_width="wrap_content"：宽度根据内容自动调整
-        android:layout_height="wrap_content"：高度根据内容自动调整
-        android:text="提交"：按钮文本为“提交”
-        app:layout_constraintTop_toTopOf="parent"：顶部约束到父布局的顶部
-        app:layout_constraintBottom_toBottomOf="parent"：底部约束到父布局的底部
-        app:layout_constraintVertical_bias="0.3"：垂直方向上的偏移，使按钮位于顶部下方 30% 的位置
-        app:layout_constraintStart_toStartOf="parent"：左侧约束到父布局的左侧
-        app:layout_constraintEnd_toEndOf="parent"：右侧约束到父布局的右侧
-    -->
     <Button
         android:id="@+id/btn_cs01"
         android:layout_width="wrap_content"
